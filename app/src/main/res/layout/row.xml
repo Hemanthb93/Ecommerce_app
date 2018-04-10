@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    android:layout_margin="10dp">
+
+    >
+
+        <LinearLayout
+            android:id="@+id/linearone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_imageview"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:background="@drawable/title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineartwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/linearone"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TV"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Micromax "
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$12,999.0"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/iv_cart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/cart" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_cartitems"
+                android:layout_toRightOf="@+id/iv_cart"
+                android:text="0"
+                android:textColor="#f44941"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineartwo"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="05dp"
+            android:layout_marginRight="05dp">
+
+
+            <ImageButton
+                android:id="@+id/iv_plus"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/plus" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="10dp" />
+
+            <ImageButton
+                android:id="@+id/iv_minus"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/minuss" />
+
+            <TextView
+                android:id="@+id/tv_amountpayable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Amount Payable:"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
